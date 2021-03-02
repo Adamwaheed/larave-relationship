@@ -9,7 +9,8 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::with('brand','category')->get();
+        $products = Product::with('brand','category','vendor')->take(20)->get();
+
         return view('products.index')->with('products',$products);
     }
 

@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('color');
             $table->integer('brand_id');
+            $table->integer('vendor_id');
             $table->integer('category_id');
             $table->timestamps();
         });

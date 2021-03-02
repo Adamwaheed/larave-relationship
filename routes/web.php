@@ -20,3 +20,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::resource('products', \App\Http\Controllers\ProductController::class);
+Route::resource('brands', \App\Http\Controllers\BrandController::class);
